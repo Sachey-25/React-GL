@@ -1,0 +1,297 @@
+>> Javascript.
+--------------
+React <----- JS <---- JSX attritubes 
+
+Components <---- bulding blocks of react application
+
+These components are much reliable on Javacript.
+
+>>> OOPS <--- Object oriented programming system.
+
+class 
+object
+constructor
+this
+
+>> vs code IDE 
+
+h1 ---- is the first heading of html 
+which has highest level of font representing 
+
+h2 ---- little small then h1
+h3 ---- little small then h2 and more small then h1
+h4
+h5
+h6 
+
+font size .
+font mapping.
+font margining.
+
+
+>> Programming/web desiging
+
+>> desinging and developing.
+
+html + css/BS  =====> designing 
+html + css/BS + js ====> developing
+
+extension
+React is JS extension.
+html + css/bs + js (react) ==> web devlop
+
+>>> react ==> html + css/Bs + js.
+
+Javascript has it own extensions
+1. React
+2. Next 
+3. vue 
+4. node 
+5. amber
+
+
+Javascript
+----------------
+1. We need to make use of script tag <script> </script>
+2. We need to make use of this in body tag
+3. Whatever tags(html) that we are using we need to type above the 
+<script tag>
+4. We need to assign a id to the html tag 
+5. In order to execute/ to view on the browser 
+we need to make use of JSDOM (dynamic object model).
+
+Note:
+Whatever the id is being used is the pure exampe of jsdom.
+
+=========================================================================
+
+Javascript can actually "dispay" the content in four different ways.
+
+1. innerHtml
+2. document.write()
+3. window.alert()
+4. console.log()
+
+Javasctipt is web programming language.
+
+>> variables >> datatypes >> loops >> condtional statement
+>> Operators >> Switch statements >> functions
+
+-------------------------------*******************-----------------------
+
+Variables 
+--------
+in order to define a variable we need to make use of datatypes
+and there are 3 types of DT in Javascript
+
+1. var
+2. let
+3. const 
+
+int, String, bool, float, double, short, long, byte
+
+
+
+
+=========================================================================
+ Javascript Let
+
+>> Variables defined with let connot be redeclared.
+
+	let x=100;
+	let x-"sachin" <--- This is not allowed.
+
+Syntax error : 'x'has already been declared.
+
+
+>> Variables defined with let must be declared before use
+
+document.write("name");
+
+>> Variables defined with let have Block space || seperate.
+it will not read into block even though we use same variable.
+
+{
+	//block
+	let x=100;
+}
+
+{
+	//block
+	let x="sachin";
+}
+----------------------------------**********--------------------------
+
+	var x=2; //allowed 
+	let x=3; //not allowed
+
+{
+	let x=2; //Allowed 
+	let x=3; //Not allowed 
+}
+
+
+{
+	let x=2; //allowed 
+	var x=3; //Not allowed
+}
+-------------------------------***********------------------------------
+const 
+=====
+>> variables declared with const connot be redeclared.
+>> variables declared with const cannot be reassigned.
+>> variables declared with const have block space.
+
+JS datatypes
+-------------
+let 
+var 
+const
+
+>> arrays || JS objects 
+
+
+let length=12 //number (integer)
+let firstname="sachin" //string
+let object={ firstname:"Sachin" lastname:"Anil"} //object
+
+DT concantination. 
+>> Combining or Merging <<< Adding
+
+
+"       "  
+
+
+" ' '  "  // allowed
+
+'  " "  ' // not allowed <-- in a general programming  // allowed 
+
+
+JavaScript arrays
+---------------------
+1. denote it in []
+2. comma's are used in order to seperate the values
+
+access the elements
+------------------
+>> We need to focus on the index places of the array.
+
+
+Type of Operator.
+-----------------
+
+The type of operator returns the type (data type) of a variable.
+
+Operators
+==========
+
+1. Arithmatic Operator
+
++ , - , * , / , %, ++ , --, ** 
+additon, substraction, mulitplication, division, modulous
+pre/post increment and pre/post decrement and Exponential. 
+
+2. Comparision Operator
+	2.1 == Equal to :==> Returns true if the operands are equal.
+	2.2 != Not equal to :==> Returns true if the operands are not equal
+	2.3 > Greater than  :===> Returns true if left operand is greater than right operand
+	2.4 >= Greater than equal to :===> Returns true if left operand is greater than or eqal to
+						the right operand
+	2.5 < Lesser than :===> Returns true if the left operand is less than right operand
+	2.6 <= Lesser than equal to :===> Returns true if the left operand is less than or equl to 
+						the right operand.
+
+3. Logical Operator
+
+	3.1) Logical And | && :==> Returns true if both the operands are true, else
+				   returns false.
+	3.2) Logical Or | || :==> Retutns true if either of the operands are true.
+				   returns false
+	3.3) Logical Not | ! :==> Returns true if the operand is false and vice versa.
+
+4. Assignment Operator
+	=
+	d=10;
+	+=     :====> d+=10 ==> d = d+10 ==> d = 10+10 ==> d=20
+	-=	:====> d-=10 ==> d = d-10 ==> d = 10-10 ==> d=0
+	*=	:====> d*=10 ==> d = d*10 ==> d = 10*10 ==> d=100
+	/=	:====> d/=10 ==> d = d/10 ==> d = 10/10 ==> d=1
+	%=	:====> d%=10 ==> d = d%10 ==> d = 10%10 ==> d=0
+	**=	:====> d**=10 ==> d = d**10 ==> d = 10**10 ==> d=10000000000
+
+5. String Operator :-- 
+6. Other Operator : --- typeof, void, delete, ?:, in , instance of 
+
+?: is known as Ternary Operator.
+
+7. Bitwise Opeator : --- & , | , ^,`~, << , >>, >>>
+
+
+
+JS type conversation
+====================
+>> Implicit Conversation : Automatic Type conversion
+>> Explicit Conversation : Manual Type conversation
+
+Note : When a number is added to a string, JavaScript converts the number to a string
+before concatination.
+
+Condtional Statements
+1. 	If statement 
+	if.. else 
+	if.. else if.. else
+	if.. else if.. else if.. else
+
+2. Loops
+
+3. Swtich 
+
+4. General Practices
+
+================**********************==========================================
+
+if(condtion)
+{
+	//body of if // if block
+
+} 
+
+>> If the condition is evaluated to true, the code inside the body of it is executed
+>> If the conditon is evaluated to false, the code iinside the body of it is skipped
+
+Note:
+It is more durable if we use comparision operator.
+
+if.. else
+------------
+>> If the condition is evaluted to "true"
+1. the code inside the body of if is executed
+2. the code inside the body of else is skipped from execution
+
+>> If the condition is evaluated to "False"
+1. the code inside the body of else is executed
+2. the code inside the body of if is skipped from execution.
+
+
+3. if ... else if... else 
+
+syntax:
+======
+if(condition){
+	//first if block code
+
+} else if (condition){
+	//second if block code	
+}
+
+else {
+	//else block
+}
+note: If block gets execute on true conditions only....!!!!!
+
+if condition1 evaluated to true the code block1 is executed. and second if block 
+skipped. 
+
+
+Check the largest number using if else statement ???
+find the largest among three numbers.
