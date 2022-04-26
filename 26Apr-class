@@ -1,0 +1,194 @@
+JavaScript Loops
+----------------
+for loop
+
+>> for keyword 
+
+
+for(initialExpression; condition (true); update expression(++/--){ 
+	//for loop body 
+
+}
+
+print a number about 25 times.
+const number = 3
+
+for( let i=1; i <=number ; i++ ){
+	console.log(" This sentence is going to print 3 times")
+}
+
+1 This sentence is going to print 3 times
+2 This sentence is going to print 3 times
+3 This sentence is going to print 3 times
+
+--------------------------------------------------------------------------------------
+
+for( variable <any name/alpahbet> in DV){
+		//Body of for loop
+}
+
+ex:
+===
+
+const emp = {
+	firstname:"Sachin",
+	lastname:"Anil",
+	city:"Bangalore",
+	pin: 560045
+}
+
+// I would like to print only city..!! 
+
+>> In any selective/entire print/output we can make use of for/in loop.
+
+
+>> Arrays, Strings, Maps and nodeLinks and more.
+
+for()
+for in
+for of <----- Used to iterate over the iterable objects.
+
+
+states = ["Karnataka","Maharashtra","Kerala","Andrapradesh"]
+
+let text=''
+for(let name of states){
+	text += name + "<br>"
+}
+document.getElementById("iter").innerHtml=text
+
+------------------------------------------------------------------------------------
+
+
+While loop
+-----------
+syntax:
+---------
+while(condition){
+	//code block to be executed.
+}
+
+Note: Loop gets executed only on true condition.
+
+do.. while.. loop !!
+
+
+do{
+
+
+}
+while(condtion)
+
+>> For the first iteration do get executed even if while condition is false.
+>> Later on if only if the condition is true then only the entire loop mechnism will
+takes place.
+
+-------------------------------------------*********----------------------------------
+
+Switch statement/expression
+
+Syntax:
+------
+switch(variable/expression){
+
+	case value1:
+	// body of case 1;
+	break;
+	case value2:
+	// body of case 2;
+	break;
+	case value3:
+	// body of case 3;
+	break;
+	case value4:
+	// body of case 4;
+	break;
+	case value5:
+	// body of case 5;
+	break;
+	..
+	..
+	..
+	case valueN:
+	// body of case N;
+	break;
+
+	default:
+	// body of defualt.
+}
+
+instead of using multiple if else block... 
+
+=========================*******************========================================
+
+JavaScript Functions/Methods  ===> React : stateless components
+----------------------------------------------------------------
+calculator using Switch statement
+
+requirements
+1. Take input dynamically
+2. perform +, -, *, / and % using switch statement.
+
+Function:
+========
+>> A function us a block of code that performs a specific task.
+
+syntax:
+-------
+
+keyword : function 
+
+function <function_name>(){
+	//body of the function.
+}
+
+
+function 
+========
+1. function declaration ===> exact piece of code/programming 
+2. function call ====> calling the function name in order to execute the code.
+
+3. function parameters/arguments
+---> function greet(para1, para2, para3, para4, ... para n){
+}
+
+>> Javascript has built in function constructor.
+------------------------------------------------
+>>> Initialize the new value/data >>> make use of word called "new" || Object
+
+Functions can also be defined with a built-in Javascript function constructor
+called function().
+
+const degreed = new Function("valuea","valueb", "return valuea * valueb")
+
+initialization ===> init ===> pocket || Object === 100rs note!!!! data
+
+In order to access the object when
+there's no direct value given to it 
+then we need to call the construtor.
+
+var result = degreed(10,10) // 100
+
+Arguments are passed by value.
+=----------------------------
+1. The parameters in a function call, are the function's argument.
+2. JavaScript arguments are passed by value. The function only gets to know the values.
+not the argument's locations.
+3. If a fuction changes an argument's value, it does not change the parameter's original value.
+4. Changes to arguments are not visible outside the function.
+
+>>> Function Invocation // Function call.
+
+breafast menu
+1. masala dosa
+2. onion dosa
+3. idli vada
+4. parota
+
+person ====> random any one?  which can fill the space... in order to fill 
+the space we need the value, and these values are getting stored in "this" keyword....!!!!
+
+Wrapper class : Object || object :<--- stored value.
+
+-----------------------------------------------------------------------------------------------
+>>> Apply(), Bind() and Closures..!!
