@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h2><center>Implicit Type Convertion</center></h2>
+
+        <script>
+            
+            let result;
+            result = 7 + '65';
+            document.write(result); // 657
+
+            result='3'+ true
+            console.log(result);
+
+            result = '123456' + undefined;
+            console.log(result)
+
+            result= '345'+ null
+            console.log(result);
+
+            result = '4' - '2'
+            console.log(result); // 2
+            console.log(typeof(result));
+
+            result = '76' - '56'
+            console.log(result); // 2
+            console.log(typeof(result));
+
+            result = '566' - '27'
+            console.log(result); // 2
+            console.log(typeof(result));
+
+
+            </script>
+    </body>
+</html>

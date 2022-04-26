@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <p id="obj"></p>
+        <p id="this"></p>
+        <p id="str"></p>
+        <script>
+
+
+            const object={
+                firstname:"Sachin", //0
+                lastname:"Anil", //1
+                city:"Bidar", //2
+                // function declaration which gives the fullname 
+                // I wanted to call full name from the object using function.
+                fullname: function() {
+                return this.firstname + " " + this.lastname;
+            }
+        }
+            document.getElementById('obj').innerHTML=object.fullname();
+
+        </script>
+
+        <script>
+
+            // this keyword is going to relate the object.
+            const myObject={
+                firstname:"Wipro", // value but not an object
+                lastname:"Technologies", // value but not an object
+                location:"Bangalore", // value but not an object
+
+                fullname:function(){
+                    return this; // this keyword is acts like an object || memory || storage || object. || container to store the value.
+                }
+            }
+                document.getElementById('this').innerHTML=myObject.fullname();
+        </script>
+
+        <script>
+
+            function myFunction(paraone, paratwo,parathree, parafour){
+                this.coffee=paraone;  // im assinging a seprate cabin. 
+                this.tea=paratwo;   // another cabin.
+                this.busicut=parathree;
+                this.eat=parafour;
+            }
+            const values=new myFunction("Sachin","Anil","Bangalore","Wipro");
+            document.getElementById('str').innerHTML=values.busicut;
+
+        </script>
+
+    </body>
+</html>

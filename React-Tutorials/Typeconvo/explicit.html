@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h2><center>Explicit convertion</center></h2>
+
+        <script>
+            let result
+
+            result = '324'
+            console.log(typeof(result)); //string
+            result = Number(result);
+            console.log(typeof(result)); //number 
+
+            result = true
+            console.log(typeof(result)); //boolean
+            result=Number(result);
+            console.log(result); //number -- boolean value hence it is 1.
+
+            result = 100
+            console.log(typeof(result));
+            result = String(result);
+            console.log(typeof(result));
+
+            result = String(12345);
+            console.log(typeof(result));
+            result = Number('Sachin')
+            console.log(typeof(result))
+
+            console.log("Booelan Explicit Conversion")
+
+            result = Boolean('') // empty string === false
+            console.log(result)
+            console.log(typeof(result))
+
+            result = Boolean(0) // Boolean value 0 : False == false
+            console.log(typeof(result))
+
+            result = Boolean(undefined) // Boolean : not given : 0 // flase
+            console.log(result)
+            console.log(typeof(result))
+
+            result = Boolean(null) // No value : 0 // false
+            console.log(result)
+            console.log(typeof(result))
+
+            result = Boolean(NaN) // None : 0 // false 
+            console.log(result)
+            console.log(typeof(result))
+
+        </script>
+    </body>
+</html>
