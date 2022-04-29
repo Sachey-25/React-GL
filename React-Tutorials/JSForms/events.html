@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>webpage</title>
+    </head>
+    <body>
+        <h2> JavaScript HTML Events </h2>
+        <h2 onclick="this.innerHTML='Good Morning' ">Click me to change</h2>
+        <h3 onclick="changeText(this)">Click again</h3>
+        <button onclick="htmlevent()">The time is: </button>
+        <button id="button">Login</button>
+
+        <script>
+            function changeText(id){
+                id.innerHTML="Good morning again";
+            }
+        </script>
+        <script>
+            function htmlevent(){
+                document.getElementById('demo').innerHTML=Date();
+            }
+        </script>
+        <h2 id="demo"></h2>
+
+        <script>
+            document.getElementById('button').onclick=htmlEvent; // is going to interact with the html button created
+            function htmlEvent(){
+                document.getElementById('event').innerHTML=Date();
+            }
+        </script>
+        <h4 id="event"></h4>
+    </body>
+</html>

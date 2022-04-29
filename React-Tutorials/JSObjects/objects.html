@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <p id="obj"></p>
+        <p id="object"></p>
+        <h2 id="ob"></h2>
+        <script>
+            const person={
+                name:"Sachin",
+                city:"Bidar",
+                state:"Karnataka",
+                pin:560045,
+                // I need to create a funtion to access
+                // the data w.r.t this operator.
+                variable:function(){
+                    return this.name + " " + 
+                    this.city + " " + this.state +
+                    " " + this.pin ;
+                }
+            }
+            console.log(typeof(person));
+            console.log(person.name, person.city, person.state, person.pin);
+            document.getElementById("obj").innerHTML=person.variable();
+        </script>
+
+        <script>
+             const object={
+                 studetname:"Sachin",  // values of object
+                 section:"D",
+                 marks:{
+                     sceince:70, // values of marks.
+                     javascript:60,
+                     Math:75
+                 }
+             }
+             console.log(object.studetname, object.section)
+             console.log(object.marks.sceince)
+             console.log(object.marks.javascript)
+             console.log(object.marks.Math);
+        </script>
+
+        <script>
+             const obj={
+                 studetname:"Sachin",  // values of object
+                 section:"D",
+
+                 result:function(){
+                     return this.studetname + " "+ this.section;
+                 },   
+                 marks:{
+                     sceince:70, // values of marks.t
+                     javascript:60,
+                     Math:75,
+                     display:function(){
+                         return this.sceince + " " + this.javascript +
+                          " " + this.Math;
+
+                         return obj.studetname + " " + obj.section
+                         + " " + obj.marks.sceince;
+                     }
+                    }
+                }
+             document.getElementById("object").innerHTML=obj.result();
+             document.getElementById("ob").innerHTML=obj.marks.display();
+        </script>
+
+        <script>
+            function sports(){
+                // this operator is also called as constructor.
+                this.sportname="cricket", // container to store the value
+                this.totalplayers=14,
+                this.accessories="Cricket Kit",
+                this.ground="Cricket stadium"
+            }
+            // create accessable objects to the function
+            const res = new sports(); // Object which gets binded to the functions.
+            console.log(res.sportname);
+            console.log(res.ground);
+        </script>
+    </body>
+</html>

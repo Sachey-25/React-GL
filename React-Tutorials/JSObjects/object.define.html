@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <!--Utilization on getter and setter-->
+        <script>
+            const product={
+                firstname:"Dell",
+                lastname:"Laptop"
+            }
+            //Getting property
+            Object.defineProperty(product,"getname",{
+                get: function(){
+                    return this.firstname + " " +
+                    this.lastname;
+                }
+            });
+            //setting property
+            Object.defineProperty(product,"changeName",{
+                set: function(value){
+                   // this.firstname=avalue
+                    this.lastname=value
+                }
+            });
+            console.log(product.firstname);  //Dell
+            product.changeName='Lenovo'
+            console.log(product.firstname); //Lenovo
+
+            Object.defineProperty(product,"objectOne",{
+                get: function(){
+                    return this.firstname + " " +
+                    this.lastname;
+                }
+            });
+            Object.defineProperty(product,"ObjectTwo",{
+                set: function(avalue){
+                   // this.firstname=avalue
+                    this.lastname=avalue
+                }
+            });
+            console.log(product.lastname);
+            product.ObjectTwo="Technologies"
+            console.log(product.lastname);
+
+        </script>
+    </body>
+</html>

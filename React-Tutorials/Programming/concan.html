@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+
+    <body>
+        <p id="player"> </p>
+        <p id="cric"></p>
+        <p id="convo"></p>
+        <p id="answer"></p>
+        <p id="bool"></p>
+        <p id="name"></p>
+        <p id="type"></p>
+
+        <script>
+            //Concatination ====> int+string
+            let jerseyNumber= 10;
+            let name="Sachin Tedulkar";    
+          
+            document.getElementById("player").innerHTML="God of cricket is with "+ "<b> jersey number : " + jerseyNumber  + "<b>" + " " + name ;
+            jerseyNumber;
+
+            let player = 99 + "Sourav Ganguly";
+            document.getElementById("cric").innerHTML=" Bengal Tiger " + player;
+
+        </script>
+
+        <script>
+
+            let question="What is your style of programming?"
+            let answer='I found of  "frontend developing." '
+
+            document.getElementById("convo").innerHTML="Any questions... " + 
+            question + "<br>" + answer;
+
+        </script>
+
+        <script>
+
+            //Boolean datatypes
+            let x=5;
+            let y=10;
+            let z=5;
+
+          document.getElementById("bool").innerHTML=(x==y) //false
+
+          document.write(y==z)
+    
+          document.write(x==z)
+      
+          document.write(z==y)
+
+        </script>
+
+        <script>
+            //Javascript Arrays
+
+            const players = [
+                "sachin Tendulkar", // 0
+                 100 , // 1
+                 "Rohit sharma", // 2  
+                 49 // 3
+                ]
+
+                document.write(players[0]);
+                document.getElementById("name").innerHTML=players[2];
+        </script>
+
+        <script>
+
+            document.getElementById("type").innerHTML=
+
+            typeof ""+ "<br> " + // empty string
+            typeof "Sachin" + "<br>" + // string 
+            typeof "WiproTechnologies" + "<br>"+ // string. 
+            typeof 100;
+
+        </script>
+
+    </body>
+</html>

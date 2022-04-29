@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>webpage</title>
+    </head>
+    <body>
+        <h3 style="background-color: red;color:white;
+        text-align: center;">JS signUp Form</h3>
+       
+        <center> <form id="input">
+            Firstname: <input type="text" name="fname" required>
+            Lastname: <input type="text" name="fname" required><br />
+            Email Id: <input type="text" name="fname" required><br />
+            Password: <input type="password" name="fname" required><br />
+            Confirm password: <input type="password" name="fname" required><br/>
+            City: <input type="text" name="fname" required><br />
+            State: <input type="text" name="fname" required><br />
+            Nationality: <input type="text" name="fname" required><br />
+            <input type="button" onclick="signUp()" value="Submit">
+            <input type="button" onclick="reset()" value="Reset"> </center>
+
+        </form>
+        <script>
+            // I would like to confirm the entered values are accepted
+            // User sing up is successful.
+            function signUp(){
+                document.getElementById('input').submit()
+                document.write("SingUp Successful")
+            }
+            function reset(){
+                document.getElementById('input').reset();
+            }
+
+        </script>
+    </body>
+</html>
