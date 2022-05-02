@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>webpage</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <button id="mybtn">Crazy</button>
+        <button id="mybt">Crazy</button>
+        <button id="myb">Crazy</button>
+        <button id="my">Crazy</button>
+        <script>
+            var storage=document.getElementById("mybtn");
+            //We need add the eventListener 
+            storage.addEventListener("mouseover",firstfun)
+            storage.addEventListener("mouseout",secondfun)
+            storage.addEventListener("click",thirdfun);
+
+            function firstfun(){
+                document.getElementById('demo')
+                .innerHTML +="Mouse Over <br>" ;
+            }
+            
+            function secondfun(){
+                document.getElementById('demo')
+                .innerHTML +="Mouse out <br>" ;
+            }
+            function thirdfun(){
+                document.getElementById('demo')
+                .innerHTML +="Clicked!!! <br>" ;
+            }
+            
+        </script>
+    </body>
+</html>

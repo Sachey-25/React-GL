@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>webpage</title>
+    </head>
+    <body>
+        <!--event creation-->
+        <button id="mybtn">Click me</button>
+        <button id="btn">Try it</button>
+        <button id="myb">Event</button>
+        <button id="bn">Crazy</button>
+        <script>
+            document.getElementById('mybtn')
+            .addEventListener("click",demo);
+            function demo(){
+                alert("Hello World");
+            }
+        </script>
+        <script>
+            document.getElementById("btn")
+            .addEventListener("click",function(){
+                alert("This is another event listener.")
+            })
+        </script>
+        <script>
+            document.getElementById("myb")
+            .addEventListener("click",function(){
+                document.write("This is listening to the event")
+            })
+        </script>
+        <script>
+            document.getElementById("bn")
+            .addEventListener("click",function(){
+                alert("This is going crazy.")
+            })
+        </script>
+        
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>webpage</title>
+    </head>
+    <body>
+        <h2><Center>JsHtml Events</Center></h2>
+        Enter any String:<input type="text" id="input" 
+                            onchange="textChange()">
+        Enter string again:<input type="text" id="val"
+        onchange="reverse()"> <br> <br>
+
+        <center><div onmouseover ="hover(this)" 
+        onmouseout="hoverOut(this)"
+        style="background-color: black; color:white
+        ;">Come Over here</div></center>
+        <script>
+            function hover(object){
+                object.innerHTML="Mouse Over me"
+            }
+            function hoverOut(object){
+                object.innerHTML="Good Afternoon"
+            }
+        </script>
+
+        <script>
+            function textChange(){
+                const val=document.getElementById('input')
+                val.value = val.value.toUpperCase();
+            }
+
+        </script>
+        <script>
+            function reverse(){
+                const res=document.getElementById('val')
+                res.value=res.value.toLowerCase();
+            }
+        </script>
+    </body>
+</html>

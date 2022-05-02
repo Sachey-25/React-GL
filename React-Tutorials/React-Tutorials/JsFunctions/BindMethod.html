@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <p id="bind"></p>
+        <p id="demo"></p>
+        <script>
+            const employee={
+                firstname:"Sachin",
+                lastname:"Anil",
+                fullName:function(){
+                    return this.firstname + " " + this.lastname;
+                }
+            }
+            const organization={
+                firstname:"Guradian",
+                lastname:"Life",
+            }
+            //We need to create a variable to bind or borrow the method.
+            let variable = employee.fullName.bind(organization);
+            document.getElementById('bind').innerHTML=variable();
+            // In this piece of code we had created two objects
+            // The org object borrows the empfullname method from employee.
+        </script>
+        <script>
+
+            const mobile={
+                OnePlus:35000,
+                iPhone:64000,
+                MI:20000,
+                Samsung:35000,
+
+                //method
+                display:function(){
+                    // I wanted to display one the mobile name.
+                    // we need to create variable.
+                    let x=document.getElementById("demo")
+                    x.innerHTML = this.OnePlus + " " + this.iPhone;
+                }
+            }
+            setTimeout(mobile.display,3000)       
+        </script>
+    </body>
+</html>

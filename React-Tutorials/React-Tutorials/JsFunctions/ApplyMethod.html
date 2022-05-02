@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <p id="in"></p>
+        <p id="color"></p>
+        <script>
+            // I will create a function to access the below object.
+            // {} <-- Object , [] <--- array 
+            //second object               
+            const person={
+                fullname:function(){
+                    return this.firstName+ " " + this.lastName + " " + this.city + " " + this.pin;
+                }
+            }
+            // first object
+            const personOne={
+                firstName:"Sachin",
+                lastName:"Anil",
+                city:"Bangalore",
+                pin: 560045
+            }
+            document.getElementById("demo").innerHTML=
+            person.fullname.apply(personOne);
+            //third object
+            const employee={
+                empid:123456,
+                empName:"Sachin",
+                empDesig:"software developer",
+                empCity:"Chennai"
+            }
+            //fourth object 
+            const access={
+                employeeDetails:function(){
+                   return this.empName+ " " + 
+                    this.empid+ " " +
+                    this.empDesig+ " " +
+                    this.empCity
+                }
+            }
+            document.getElementById("in").innerHTML=access
+            .employeeDetails
+            .apply(employee);
+        </script>
+
+        <script>
+
+            const color={
+                white:"Peace", //0
+                red:"Danger", //1
+                green:"Safe", //2 
+
+            } 
+            const details={
+                colortalks:function(yellow, blue){
+                    return this.white + " " +
+                    this.red + " " +
+                    this.green + " " + yellow + " " + blue;
+                }
+            }
+            document.getElementById('color').innerHTML=
+            details.colortalks.apply(color,["Warning","win"]);
+        </script>
+    </body>
+</html>

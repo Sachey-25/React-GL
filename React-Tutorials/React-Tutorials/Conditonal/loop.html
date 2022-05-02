@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Loops</title>
+    </head>
+
+    <body>
+        <p id="demo"></p>
+        <p id="loop"></p>
+        <p id="in"></p>
+        <p id="inner"></p>
+        <p id="iter"></p>
+
+        <h2><center> JavaScript Loops </center></h2>
+
+        <script>
+            const number=5;
+            for(let i=1;i<=number;i++){
+                console.log("This sentencge is printin 3 times");
+                console.log(i);
+            }
+
+            let text='';
+            for(let i=0; i<5 ; i++){
+                text = text+"this sentence is priting" + i + "<br>"
+            }
+            document.getElementById("demo").innerHTML=text;
+
+            const cars=[
+                "Maruthi Suzuki", //0
+                "Hyundai", //1
+                "Toyota", //2 
+                "Honda",// 3
+                "Kia" //4 
+            ]
+            let char=''
+            for(let i=0; i<cars.lengths; i++){
+                char += cars[i] + "<br>" //elements of an array!!
+            }
+            document.getElementById("loop").innerHTML=char;
+        </script>
+
+        <script>
+            const emp = {
+                  firstname:"Sachin",
+                  lastname:"Anil",
+                  city:"Bangalore",
+                  pin: 0101
+            }
+
+            let empl=''
+            for(let e in emp){
+                empl += emp[e] + " ";
+              document.getElementById("inner").innerHTML=empl;
+              console.log(empl);
+               
+            }
+            document.getElementById("in").innerHTML=empl;
+        </script>
+
+        <script>   
+            states = ["Karnataka","Maharashtra","Kerala","Andrapradesh"]
+
+            let input=''
+            for(let name of states){
+                input += name + "<br>"
+            }
+            document.getElementById("iter").innerHtml=input
+        </script>
+    </body>
+</html>

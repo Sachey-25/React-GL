@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <titl>webpage</titl>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <p id="add"></p>
+        <p id="const"></p>
+        <p id="call"></p>
+        <script>
+
+            //function declaration
+            function greet(){
+                console.log("Good afternoon guys!!")
+            }
+            //function call
+            greet();
+
+        </script>
+
+        <script>
+            //Function declaration
+            function addition(){
+                let numberOne=10;
+                let numberTwo=20;
+                let sum;
+                sum=numberOne+numberTwo
+                console.log("additon of 10 and 20 are:", sum);
+            }
+            addition(); //function call
+
+        </script>
+
+        <script>
+            //function declaration : do contain the parameters.
+            // valueOne and valueTwo are the parameter of the function.
+            function fun(valueOne,valueTwo){
+                console.log("multiplication of two numbers is : ", valueOne*valueTwo);
+            }
+            // I wanted to pass the values when the function gets called.
+            fun(25,25);
+        </script>
+
+        <script>
+            var result=letssay(15,14);
+            document.getElementById('demo').innerHTML="The multiplication of 15 and 14 is :" + result;
+            //return keyword
+            function letssay(anum, bnum){
+                return anum*bnum;
+            }           
+
+        </script>
+
+        <script>
+            //A function can be stored in a variable 
+            // Output : function(cnum,dnum){return cnum*dnum}
+            var sum=function(cnum,dnum){return 10*20};
+            document.getElementById('add').innerHTML=sum;
+        </script>
+
+        <script>
+            var sum=function(cnum,dnum){return cnum*dnum};
+            document.getElementById('add').innerHTML="Multiplication of 10 and 20 is : "+ sum(10,20);
+        </script>
+
+        <script>
+            const assume=new Function("avalue", "bvalue", "return avalue*bvalue");
+            document.getElementById('const').innerHTML="10 * 10 is "+ assume(10,10);
+        </script>
+
+        <script>
+            (function() {
+                document.getElementById('call').innerHTML= "Hello! Guys..!!";
+            }) (); // function is calling by itself.....
+            // callback function : A function is calling another function.
+        </script>
+
+    </body>
+</html>

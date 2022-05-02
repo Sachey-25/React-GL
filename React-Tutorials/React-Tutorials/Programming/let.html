@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Let variables Js</title>
+    </head>
+    <body>
+        <p id="var"></p>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+
+        <script>
+            let x=100;
+            let y="sachin";
+
+            document.getElementById("var").innerHTML="js variable conditions"+  "<br>" + x;
+
+            let number=200;
+            {
+                let number=100;
+
+            }
+
+            var z=200;
+            {
+                var z=100;
+            }
+
+            document.getElementById("demo").innerHTML="Let block impl" +
+            "<br>" + number;
+            document.getElementById("demo1").innerHTML="Var block impl" +
+            "<br>" + z;
+        </script>
+
+    </body>
+</html>

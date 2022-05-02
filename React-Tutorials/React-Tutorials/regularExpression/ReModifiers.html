@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Webpage</title>
+    </head>
+    <body>
+        <h2>Do a global search for "fun" in a string:</h2>
+
+        <script>
+            let text="Programming is fun"; //local statement
+            let result=text.match(/local/g);
+            console.log(result);
+        </script>
+        <script>
+            var sentence="\n beatiful \n beautiful"
+            let res=sentence.match(/beautiful/m)
+            let sea=sentence.search(/beautiful/i);
+            console.log(res);
+            console.log(sea);
+        </script>
+        <script>
+            var numbers="10,20,30,40"
+            var disp=numbers.match(/[20]/g)
+            var dis=numbers.search(/[20]/g)
+            console.log(disp)
+            console.log(dis)
+        </script>
+        <script>
+            var txt="JavaScript is web programming language";
+            var output=txt.match(/[a]/g)
+            var input=txt.search(/[s]/g)// position of the element present.
+            var sample=txt.match(/[web]/g);
+            console.log(output);
+            console.log(input);
+            console.log(sample);
+        </script>
+        <script>
+            var numb="123456789";
+            var sum=numb.match(/[456]/i)
+            var su=numb.match(/[456]/g)
+            var s=numb.match(/[456]/m)
+            console.log(sum);
+            console.log(su);
+            console.log(s);
+            console.log("----------------------------------")
+        </script>
+         <script>
+            var numb="123456789";
+            var sum=numb.match(/[^456]/i)
+            var su=numb.match(/[^456]/g)
+            var s=numb.match(/[^456]/m)
+            console.log(sum);
+            console.log(su);
+            console.log(s);
+        </script>
+        <script>
+            var colors="pink,white,violet,white,red,pink,yellow,blue,orange,green"
+            var re=colors.match(/(white|pink)/g)
+            console.log(re);
+        </script>
+        <script>
+            let integer="Salary creditted of 25000 and it is 100%"
+            let find=integer.match(/\d/g)
+            console.log(find);
+            let finding=integer.match(/\s/g)
+            console.log(finding)
+            let f=integer.match(/\bcreditted/)
+            console.log(f)
+            let fi=integer.match(/25000\b/)
+            console.log(fi)
+            let ff=integer.match(/uoo57\b/)
+            console.log(ff)
+        </script>
+    </body>
+</html>

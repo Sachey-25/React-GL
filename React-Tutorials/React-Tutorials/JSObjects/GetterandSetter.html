@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+            const student={
+                registrationID:12345, //Data Property
+	//Accessor properties.
+    get getID(){
+        return this.registrationID;
+    	} // encapsulation ===>     
+    }
+    console.log(student.registrationID); // 12345.
+   // console.log(student.getID());// ERROR
+    console.log(student.getID); // 12345.
+        </script>
+
+        <script>
+            const standard={
+                name:'Sachin',
+                //Accessor property
+                set changeName(newName){
+                    this.name=newName;
+                }
+            }
+            console.log(standard.name);//sachin
+            // setting the property to the value
+            standard.changeName='Rohit' 
+            console.log(standard.name); // Rohit
+        </script>
+    </body>
+</html>

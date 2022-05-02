@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <center><h2 id="in"></h2></center>
+        <script>
+            let greet = () => 
+            console.log("Helllo my name is Arrow function");
+            greet();
+        </script>
+        <script>
+            var greetings = () => {
+                return "Hello My name is Arrow function"
+            } 
+            document.getElementById('demo').innerHTML=greetings();
+        </script>
+        <script>
+            hello = () => "Welcome to the world of web"
+            document.getElementById('in').innerHTML=hello();
+        </script>
+        <script>
+            let person = {
+                name:"Sachin Anil",
+                city:"Bidar",
+                sayName:()=>{
+                    console.log("Object implemented using arrow function")
+                }
+            }
+            person.sayName();
+        </script>
+    </body>
+
+</html>

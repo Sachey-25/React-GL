@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <p id="tree"></p>
+        <script>
+            //A Javascript function does not perform any checking on parameter values(arguments).
+            function myfunction(x,y){
+                if(y==undefined){ // when will if condition execute?
+                    y=20;        
+                }
+                return x*y;
+            }
+            document.getElementById('demo').innerHTML=myfunction(20); //400
+        </script>
+
+        <script>
+            let number = parseInt(prompt("Enter a number: "))
+            function evenOdd(){
+                if(number%2==0){
+                    document.write(`${number} is even`);
+                }else{
+                    document.write(`${number} is odd`);
+                }
+            }
+            //Function call 
+            evenOdd();
+        </script>
+
+        <script>
+
+            function weather(x=4,y=4){
+                if(x==y){
+                    y=4
+                }
+                return x*y;// 8 4*2 = 8 
+            }
+            document.getElementById('tree').innerText=weather(4,2);
+        </script>
+
+
+    </body>
+</html>
