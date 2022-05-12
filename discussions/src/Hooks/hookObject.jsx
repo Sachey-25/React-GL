@@ -11,7 +11,7 @@ const Person =() => {
 })
                 const Updateinfo = () => {
                     input(previousState => {
-                        return {...previousState, display:"This is a total example of react useState hook"}
+                        return { ...previousState, display:"This is a total example of react useState hook"}
                     })
                 }
 return(

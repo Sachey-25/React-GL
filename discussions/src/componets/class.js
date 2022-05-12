@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export default class User extends Component{
     //we will define the constructor
     constructor(){
-        super();
+        super()
         this.state={
             firstName:"Sachin",
             lastName:"Anil",
