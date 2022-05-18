@@ -1,0 +1,13 @@
+.primary{
+    color:orange;
+}
+.anything{
+    color: fuchsia;
+}
+.font-xl{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 100px;
+}
+.text{
+    text-align: center;
+}
